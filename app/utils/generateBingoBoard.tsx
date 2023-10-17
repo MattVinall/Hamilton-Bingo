@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { Businesses, Business, BingoBoard } from "../types";
 
 export function generateBingoBoard(businesses: Businesses): BingoBoard {
@@ -10,15 +9,11 @@ export function generateBingoBoard(businesses: Businesses): BingoBoard {
         O: [],
     };
 
-
     const getRandomBusiness = (category: string, usedBusinesses: Business[]): Business => {
         const businessesInCategory = businesses[category];
-
-        console.log("used bs", usedBusinesses);
         const availableBusinesses = businessesInCategory.filter((business) => {
-            const usedCount = usedBusinesses.filter((b) => b.id === business.id).length as number;
-            const maxCount = Math.ceil(businessesInCategory.length / 5);
-            return usedCount < maxCount;
+            const usedCount = usedBusinesses.filter((b) => b.id === business.id).length;
+            return usedCount < 5;
         });
         const randomIndex = Math.floor(Math.random() * availableBusinesses.length);
         const selectedBusiness = availableBusinesses[randomIndex];

@@ -1,5 +1,3 @@
-"use client";
-
 import { useState, useEffect } from "react";
 import { Businesses, Business, BingoBoard } from "../types";
 import { generateBingoBoard } from "../utils/generateBingoBoard";
@@ -34,7 +32,7 @@ const BingoBoard: React.FC<Props> = ({ businesses }) => {
                         <h3 className="text-6xl text-center text-black font-bold mb-2">{key}</h3>
                         {bingoBoard[key as keyof BingoBoard]
                             .map((business: Business) => (
-                                <div key={business.id} className="w-full flex flex-col items-center justify-center h-[50%] p-2 mr-4 mt-4 mb-4 rounded-lg bg-gray-900">
+                                <div key={`${key}-${business.id}`} className="w-full flex flex-col items-center justify-center h-[50%] p-2 mr-4 mt-4 mb-4 rounded-lg bg-gray-900">
                                     <h4 className="text-sm font-bold mb-1">{business.name}</h4>
                                     <p className="text-sm">{business.address}</p>
                                 </div>

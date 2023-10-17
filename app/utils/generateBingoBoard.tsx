@@ -9,25 +9,33 @@ export function generateBingoBoard(businesses: Businesses): BingoBoard {
         O: [],
     };
 
-    const getRandomBusiness = (category: string, usedBusinesses: Business[]): Business => {
-        const businessesInCategory = businesses[category];
-        const availableBusinesses = businessesInCategory.filter((business) => {
-            const usedCount = usedBusinesses.filter((b) => b.id === business.id).length;
-            return usedCount < 5;
-        });
-        const randomIndex = Math.floor(Math.random() * availableBusinesses.length);
-        const selectedBusiness = availableBusinesses[randomIndex];
-        usedBusinesses.push(selectedBusiness);
-        return selectedBusiness;
+    const shuffleArray = (array: Business[]): Business[] => {
+        const shuffledArray = [...array];
+        for (let i = shuffledArray.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [shuffledArray[i], shuffledArray[j]] = [shuffledArray[j], shuffledArray[i]];
+        }
+        return shuffledArray;
     };
 
-    for (let i = 0; i < 5; i++) {
+    const categories: (keyof BingoBoard)[] = ["B", "I", "N", "G", "O"];
+
+    for (const category of categories) {
         let usedBusinesses: Business[] = [];
-        bingoBoard.B.push(getRandomBusiness("B", usedBusinesses));
-        bingoBoard.I.push(getRandomBusiness("I", usedBusinesses));
-        bingoBoard.N.push(getRandomBusiness("N", usedBusinesses));
-        bingoBoard.G.push(getRandomBusiness("G", usedBusinesses));
-        bingoBoard.O.push(getRandomBusiness("O", usedBusinesses));
+        const businessesInCategory = shuffleArray(businesses[category]);
+
+        for (let i = 0; i < 5; i++) {
+            const availableBusinesses = businessesInCategory.filter((business) => !usedBusinesses.includes(business));
+            if (availableBusinesses.length === 0) {
+                console.log("no available businesses");
+            } else {
+                const selectedBusiness = availableBusinesses.pop();
+                if (selectedBusiness) {
+                    usedBusinesses.push(selectedBusiness);
+                    bingoBoard[category].push(selectedBusiness);
+                }
+            }
+        }
     }
 
     return bingoBoard;

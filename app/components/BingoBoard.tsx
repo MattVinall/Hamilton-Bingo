@@ -9,7 +9,13 @@ type Props = {
 };
 
 const BingoBoard: React.FC<Props> = ({ businesses }) => {
-    const [bingoBoard, setBingoBoard] = useState<BingoBoard>({});
+    const [bingoBoard, setBingoBoard] = useState<BingoBoard>({
+        B: [],
+        I: [],
+        N: [],
+        G: [],
+        O: [],
+    });
 
     useEffect(() => {
         const initializeBingoBoard = () => {

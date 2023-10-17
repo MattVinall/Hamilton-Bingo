@@ -1,26 +1,18 @@
-import Image from 'next/image'
-import React from 'react';
-import BingoCard from './components/BingoCard';
-import { Props } from './types';
+"use client";
+import React from "react";
+import BingoBoard from "./components/BingoBoard";
+import { businesses } from "./constants";
 
-export default function Home() {
-
-  const BingoBoard = () => {
-    return (
-      <div className="grid grid-cols-5 gap-4">
-        <h1 className='text-white text-5xl'>Hello</h1>
-        {/* {businesses.map((category, index) => (
-          <BingoCard key={index} businesses={category} />
-        ))} */}
-      </div>
-    );
-  };
-
+const Home: React.FC = () => {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <BingoBoard />
+    <div className="container mx-auto px-4 py-8">
+      <div className="flex flex-col md:flex-row md:space-x-4">
+        <div className="flex-1">
+          <BingoBoard businesses={businesses} />
+        </div>
       </div>
-    </main>
-  )
-}
+    </div>
+  );
+};
+
+export default Home;

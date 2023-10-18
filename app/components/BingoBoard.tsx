@@ -31,8 +31,8 @@ const BingoBoard: React.FC<Props> = ({ businesses }) => {
                         <h3 className="text-6xl text-center text-black font-bold mb-2">{key}</h3>
                         {bingoBoard[key as keyof BingoBoard]
                             .map((business: Business) => (
-                                <div key={`${key}-${business.id}`} className="w-full flex flex-col items-center justify-center h-[50%] p-2 mr-4 mt-4 mb-4 rounded-md bg-navy">
-                                    <h4 className="text-lg  text-center font-bold mb-1">{business.name}</h4>
+                                <div key={`${key}-${business.id}`} className="w-full flex flex-col items-center justify-center h-[40%] p-2 mr-4 mt-4 mb-4 rounded-md bg-navy">
+                                    <h4 className="text-lg text-center font-bold mb-3">{business.name}</h4>
                                     <p className="text-">{business.address}</p>
                                 </div>
                             ))}

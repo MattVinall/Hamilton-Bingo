@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback, memo } from "react";
 import { Businesses, Business, BingoBoard } from "../types";
 import { generateBingoBoard } from "../utils/generateBingoBoard";
 
@@ -15,13 +15,14 @@ const BingoBoard: React.FC<Props> = ({ businesses }) => {
         O: [],
     });
 
-    useEffect(() => {
-        const initializeBingoBoard = () => {
-            const newBingoBoard = generateBingoBoard(businesses);
-            setBingoBoard(newBingoBoard);
-        };
-        initializeBingoBoard();
+    const initializeBingoBoard = useCallback(() => {
+        const newBingoBoard = generateBingoBoard(businesses);
+        setBingoBoard(newBingoBoard);
     }, [businesses]);
+
+    useEffect(() => {
+        initializeBingoBoard();
+    }, [initializeBingoBoard]);
 
     return (
         <div id="bingoBoard" className="rounded-lg p-4 min-h-screen">
@@ -43,4 +44,4 @@ const BingoBoard: React.FC<Props> = ({ businesses }) => {
     );
 };
 
-export default BingoBoard;
+export default memo(BingoBoard);

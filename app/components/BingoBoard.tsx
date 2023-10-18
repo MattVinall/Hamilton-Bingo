@@ -24,7 +24,7 @@ const BingoBoard: React.FC<Props> = ({ businesses }) => {
     }, [businesses]);
 
     return (
-        <div className="rounded-lg p-4 min-h-screen">
+        <div id="bingoBoard" className="rounded-lg p-4 min-h-screen">
             <div className="grid grid-cols-5 gap-4">
                 {Object.keys(bingoBoard).map((key, index) => (
                     <div key={key + index} className="col-span-1">

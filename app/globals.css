@@ -19,9 +19,31 @@
   }
 }
 
+@font-face {
+  font-family: 'Gotham';
+  src: url('../public/fonts/GothamMedium.ttf') format('truetype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bright Regular';
+  src: url('../public/fonts/Bright.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: var(--cream);
+}
+
+h3 {
+  font-family: "Bright Regular";
+}
+
+h1, h2, p, a {
+  font-family: 'Gotham Medium';
+  font-size: 1.2rem;
 }
 
 .bg-navy {

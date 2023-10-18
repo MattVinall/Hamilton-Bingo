@@ -5,13 +5,13 @@ import { businesses } from "./constants";
 
 const Home: React.FC = () => {
   return (
-    <div className="container mx-auto px-4 py-8">
-      <div className="flex flex-col md:flex-row md:space-x-4">
-        <div className="flex-1">
+    <main>
+      <section className="container mx-auto px-4 flex flex-col md:flex-row md:space-x-4">
+        <div className="flex-1 my-8">
           <BingoBoard businesses={businesses} />
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
   );
 };
 

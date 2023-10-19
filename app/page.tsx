@@ -4,6 +4,7 @@ import BingoBoard from "./components/BingoBoard";
 import { businesses } from "./constants";
 import Navbar from "./components/Navbar";
 import { Intro } from "./components/Intro";
+import Footer from "./components/Footer";
 
 const Home: React.FC = () => {
   return (
@@ -17,6 +18,7 @@ const Home: React.FC = () => {
           </div>
         </section>
       </main>
+      <Footer />
     </>
   );
 };

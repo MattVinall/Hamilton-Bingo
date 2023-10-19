@@ -49,3 +49,15 @@ h1, h2, p, a {
 .bg-navy {
   background: var(--navy)
 }
+
+@media print {
+  header,
+  #intro,
+  nav {
+    display: none !important;
+  }
+
+  #bingoBoard .card {
+    border: 2px solid black !important;
+  }
+}

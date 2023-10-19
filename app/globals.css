@@ -50,6 +50,24 @@ h1, h2, p, a, button {
   background: var(--navy)
 }
 
+a {
+  transition: all 200ms ease-in;
+  background: var(--navy);
+  color: white;
+}
+
+a:hover {
+  background: var(--gold);
+}
+
+button {
+  transition: all 200ms ease-in;
+}
+
+button:hover {
+  background: var(--gold);
+}
+
 @media print {
   header,
   #intro,

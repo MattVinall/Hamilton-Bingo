@@ -68,7 +68,7 @@ const BingoBoard: React.FC<Props> = ({ businesses }) => {
                     ))}
                 </div>
             </div>
-            <button onClick={handlePrint} className="mx-auto mt-12 container bg-navy text-white rounded-lg p-4">Print</button>
+            <button onClick={handlePrint} className="mt-12 ml-4 bg-navy text-white rounded-lg py-4 px-12">Print</button>
         </>
     );
 };

@@ -11,7 +11,7 @@ const Home: React.FC = () => {
     <>
       <Navbar />
       <Intro />
-      <main className="lg:min-h-[180vh] xl:min-h-screen">
+      <main className="xl:min-h-[180vh] 2xl:min-h-screen">
         <section className="mx-auto px-4 flex flex-col md:flex-row md:space-x-4">
           <div className="flex-1 my-8">
             <BingoBoard businesses={businesses} />

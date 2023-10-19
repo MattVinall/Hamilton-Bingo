@@ -61,14 +61,16 @@ const BingoBoard: React.FC<Props> = ({ businesses }) => {
                             {bingoBoard[key as keyof BingoBoard].map((business: Business) => (
                                 <div key={`${key}-${business.id}`} className="card w-full flex flex-col items-center justify-center h-[40%] p-2 mr-4 mt-4 mb-4 rounded-md bg-navy">
                                     <h4 className="text-lg text-center font-bold mb-3">{business.name}</h4>
-                                    <p className="text-">{business.address}</p>
+                                    <p className="text-center">{business.address}</p>
                                 </div>
                             ))}
                         </div>
                     ))}
                 </div>
             </div>
-            <button onClick={handlePrint} className="mt-12 ml-4 bg-navy text-white rounded-lg py-4 px-12">Print</button>
+            <div id="print" className="text-center">
+                <button onClick={handlePrint} className="mt-12 ml-4 bg-navy text-white rounded-lg py-4 px-12 hover:background-[#AB804D]">Print</button>
+            </div>
         </>
     );
 };

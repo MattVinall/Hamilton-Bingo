@@ -41,7 +41,7 @@ h3 {
   font-family: "Bright Regular";
 }
 
-h1, h2, p, a {
+h1, h2, p, a, button {
   font-family: 'Gotham Medium';
   font-size: 1.2rem;
 }

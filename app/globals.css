@@ -41,11 +41,23 @@ h3 {
   font-family: "Bright Regular";
 }
 
-h1, h2, p, a {
+h1, h2, p, a, button {
   font-family: 'Gotham Medium';
   font-size: 1.2rem;
 }
 
 .bg-navy {
   background: var(--navy)
+}
+
+@media print {
+  header,
+  #intro,
+  nav {
+    display: none !important;
+  }
+
+  #bingoBoard .card {
+    border: 2px solid black !important;
+  }
 }

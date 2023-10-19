@@ -50,13 +50,19 @@ h1, h2, p, a, button {
   background: var(--navy)
 }
 
-a {
+a.link:hover {
+  transition: all 200ms ease-in;
+  color: var(--navy);
+  text-decoration: underline;
+}
+
+a:not(.link) {
   transition: all 200ms ease-in;
   background: var(--navy);
   color: white;
 }
 
-a:hover {
+a:not(.link):hover {
   background: var(--gold);
 }
 

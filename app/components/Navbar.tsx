@@ -3,7 +3,7 @@ import Logo from '@/public/logos/Buy-Sell-lockup.png';
 
 function Navbar() {
     return (
-        <header className='bg-cream my-6 border-black border-b-4'>
+        <header className='bg-cream my-6 border-black border-b-4 min-h-[15vh]'>
             <nav className='container mx-auto flex justify-between items-center mb-6'>
                 <Image src={Logo} alt="Logo" width={150} height={100} />
                 <div className='flex flex-col'>

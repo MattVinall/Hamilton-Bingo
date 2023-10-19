@@ -75,13 +75,17 @@ button:hover {
 }
 
 @media print {
-  header,
   #intro,
-  nav {
+  footer {
     display: none !important;
+  }
+
+  #bingoBoard { 
+   padding: 0 !important;
   }
 
   #bingoBoard .card {
     border: 2px solid black !important;
+    height: 30% !important;
   }
 }

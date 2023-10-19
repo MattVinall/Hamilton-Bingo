@@ -212,13 +212,13 @@ export const businesses = {
       name: "Skyway Bowl",
       address: "235 Melvin Ave",
     },
-    // {
-    //   id: 44,
-    //   name: "Devils Punchbowl",
-    //   address: "Address",
-    // },
   ],
   N: [
+    {
+      id: 44,
+      name: "Tony G's Pizzeria",
+      address: "30 John St N",
+    },
     {
       id: 45,
       name: "Bernie's",
@@ -470,6 +470,11 @@ export const businesses = {
       id: 94,
       name: "Nerdcore",
       address: "211 Ottawa St N",
+    },
+    {
+      id: 129,
+      name: "Into the Abyss",
+      address: "267 King St E",
     },
   ],
   O: [

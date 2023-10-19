@@ -80,6 +80,10 @@ button:hover {
     display: none !important;
   }
 
+  nav {
+    margin-bottom: 25px !important;
+  }
+
   #bingoBoard { 
    padding: 0 !important;
   }

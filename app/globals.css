@@ -80,8 +80,22 @@ button:hover {
   }
 }
 
-@media print {
+/* safari  */
+@media not all and (min-resolution:.001dpcm) {
+  @media print {
+    @page {
+        size: 1600px;
+    }
+    
+    body,
+    html {
+      width: 1600px;
+    }
+      
+  }
+}
 
+@media print {
   #intro,
   footer {
     display: none;

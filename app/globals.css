@@ -125,12 +125,16 @@ button:hover {
 
   #bingoBoard .card {
     border: 2px solid black;
-    height: 25% !important
+    height: 20% !important
   }
 
   nav {
     display: flex !important;
     justify-content: space-between !important;
     flex-direction: row !important;
+  }
+
+  .bingo-board-container {
+    margin-top: 0 !important
   }
 }

@@ -91,6 +91,6 @@ button:hover {
 /* Phone 12, iPhone 12 Pro, iPhone 13, iPhone 13 Pro, and iPhone 14: */
 @media only screen and (width: 390px) and (height: 844px) and (-webkit-device-pixel-ratio: 3) {
   #bingoBoard {
-    min-height: 115vh !important;
+    min-height: 125vh !important;
   }
 }

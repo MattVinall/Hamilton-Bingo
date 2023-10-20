@@ -86,32 +86,33 @@ button:hover {
     display: none !important;
   }
 
-  @media print and (max-width: 768px) {
-    nav {
-      display: flex !important;
-      justify-content: space-between !important;
-      flex-direction: row !important;
-    }
-
-    #bingoBoard {
-      min-height: 85vh !important;
-    }
-
-    #bingoBoard .card {
-      height: 30% !important;
-    }
-  }
   nav {
     margin-bottom: 25px !important;
   }
 
   #bingoBoard { 
    padding: 0 !important;
-   min-height: unset !important;
+   /* min-height: unset !important; */
   }
 
   #bingoBoard .card {
     border: 2px solid black !important;
     height: 30% !important;
+  }
+
+  @media print and (max-width: 768px) {
+      nav {
+        display: flex !important;
+        justify-content: space-between !important;
+        flex-direction: row !important;
+      }
+
+      /* #bingoBoard {
+        min-height: 85vh !important;
+      }
+
+      #bingoBoard .card {
+        height: 30% !important;
+      } */
   }
 }

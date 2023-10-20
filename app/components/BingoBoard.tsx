@@ -34,7 +34,7 @@ const BingoBoard: React.FC<Props> = ({ businesses }) => {
 
     return (
         <>
-            <div id="bingoBoard" className="md:rounded-lg p-2 md:p-4 min-h-[140vh] sm:min-h-[105vh] md:min-h-[100vh] xl:min-h-[90vh]! 2xl:min-h-[90vh]">
+            <div id="bingoBoard" className="md:rounded-lg p-2 md:p-4 min-h-[105vh] sm:min-h-[105vh] md:min-h-[100vh] xl:min-h-[90vh]! 2xl:min-h-[90vh]">
                 <p className="font-bold text-md mx-4 text-center mb-4 text-black">Presented by Andrew De Marzo, REALTOR®</p>
                 <div className="grid grid-cols-5 gap-1">
                     {Object.keys(bingoBoard).map((key, index) => (

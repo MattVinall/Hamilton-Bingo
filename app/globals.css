@@ -80,6 +80,12 @@ button:hover {
     display: none !important;
   }
 
+  @media screen and (max-width: 768px) {
+    #nav {
+      display: none !important;
+    }
+  }
+
   nav {
     margin-bottom: 25px !important;
   }

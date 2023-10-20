@@ -80,7 +80,7 @@ button:hover {
   }
 }
 
-@media print {
+/* @media print {
   #intro,
   footer {
     display: none !important;
@@ -92,7 +92,6 @@ button:hover {
 
   #bingoBoard { 
    padding: 0 !important;
-   /* min-height: unset !important; */
   }
 
   #bingoBoard .card {
@@ -106,13 +105,32 @@ button:hover {
         justify-content: space-between !important;
         flex-direction: row !important;
       }
+  }
+} */
 
-      /* #bingoBoard {
-        min-height: 85vh !important;
-      }
+@media print {
 
-      #bingoBoard .card {
-        height: 30% !important;
-      } */
+  #intro,
+  footer {
+    display: none;
+  }
+
+  nav {
+    margin-bottom: 25px;
+  }
+
+  #bingoBoard {
+    padding: 0;
+  }
+
+  #bingoBoard .card {
+    border: 2px solid black;
+    height: 30%;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
   }
 }

@@ -107,6 +107,7 @@ button:hover {
 
   #bingoBoard { 
    padding: 0 !important;
+   min-height: unset !important;
   }
 
   #bingoBoard .card {

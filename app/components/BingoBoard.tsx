@@ -53,7 +53,7 @@ const BingoBoard: React.FC<Props> = ({ businesses }) => {
 
     return (
         <>
-            <div id="bingoBoard" className="md:rounded-lg md:p-4 min-h-[125vh] sm:min-h-[115vh] md:min-h-[170vh] xl:min-h-[180vh] 2xl:min-h-[105vh]">
+            <div id="bingoBoard" className="md:rounded-lg md:p-4 min-h-[150vh] sm:min-h-[125vh] md:min-h-[170vh] xl:min-h-[180vh] 2xl:min-h-[105vh]">
                 <div className="grid grid-cols-5 gap-1">
                     {Object.keys(bingoBoard).map((key, index) => (
                         <div key={key + index} className="col-span-1">

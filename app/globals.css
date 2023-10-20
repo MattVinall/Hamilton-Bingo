@@ -84,6 +84,6 @@ button:hover {
 
 @media only screen and (width: 375px) and (height: 667px) and (-webkit-device-pixel-ratio: 2) {
   #bingoBoard {
-    min-height: 130vh !important;
+    min-height: 145vh !important;
   }
 }

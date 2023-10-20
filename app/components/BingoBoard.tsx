@@ -27,49 +27,31 @@ const BingoBoard: React.FC<Props> = ({ businesses }) => {
         initializeBingoBoard();
     }, [initializeBingoBoard]);
 
-
-    const handlePrint = () => {
-        const bingoBoardElement = document.getElementById("bingoBoard");
-        const intro = document.getElementById("intro");
-        const nav = document.getElementsByTagName("nav")[0];
-
-        if (bingoBoardElement && intro && nav) {
-            const clonedBingoBoardElement = bingoBoardElement.cloneNode(true) as HTMLElement;
-
-            clonedBingoBoardElement.style.position = "absolute";
-            clonedBingoBoardElement.style.top = "-9999px";
-            clonedBingoBoardElement.style.left = "-9999px";
-
-
-            document.body.appendChild(clonedBingoBoardElement);
-
-
-            window.print();
-
-            document.body.removeChild(clonedBingoBoardElement);
-        }
+    const handleRefresh = () => {
+        window.location.reload();
     };
 
 
     return (
         <>
-            <div id="bingoBoard" className="md:rounded-lg p-2 md:p-4 min-h-[135vh] sm:min-h-[125vh] md:min-h-[170vh] xl:min-h-[180vh] 2xl:min-h-[105vh]">
+            <div id="bingoBoard" className="md:rounded-lg p-2 md:p-4 min-h-[140vh] sm:min-h-[105vh] md:min-h-[100vh] xl:min-h-[90vh]! 2xl:min-h-[90vh]">
+                <p className="font-bold text-md mx-4 text-center mb-4 text-black">Presented by Andrew De Marzo, REALTOR®</p>
                 <div className="grid grid-cols-5 gap-1">
                     {Object.keys(bingoBoard).map((key, index) => (
                         <div key={key + index} className="col-span-1">
-                            <h3 className="text-4xl md:text-6xl text-center text-black font-bold mb-2">{key}</h3>
+                            <h3 className="text-5xl md:text-7xl text-center text-black font-bold mb-2">{key}</h3>
                             {bingoBoard[key as keyof BingoBoard].map((business: Business) => (
-                                <div key={`${key}-${business.id}`} className="card w-full flex flex-col items-center justify-center h-[20%] md:h-[40%] p-2 mr-4 mt-4 mb-4 rounded-md bg-navy">
-                                    <h4 className="text-sm md:text-lg text-center font-bold mb-3">{business.name}</h4>
-                                    <p className="text-center text-sm md:text-base">{business.address}</p>
+                                <div key={`${key}-${business.id}`} className="card w-full flex flex-col items-center justify-center h-[25%] md:h-[40%] px-2 md:px-2 text-xs my-2 md:my:4 rounded-md bg-navy">
+                                    <h4 className="text-xs md:text-sm lg:text-lg text-center font-bold mb-3 text-white">{business.name}</h4>
+                                    <p className="text-center text-xs md:text-base lg:text-lg text-white">{business.address}</p>
                                 </div>
                             ))}
                         </div>
                     ))}
                 </div>
             </div>
-            <div id="print" className="text-center">
-                <button onClick={handlePrint} className="mt-12 bg-navy text-white rounded-lg py-4 px-12 hover:background-[#AB804D]">Print</button>
+            <div className="text-center">
+                <button onClick={handleRefresh} className="mt-12 bg-navy text-white rounded-lg py-4 px-12 hover:background-[#AB804D]">Refresh</button>
             </div>
         </>
     );

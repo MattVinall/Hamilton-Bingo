@@ -74,18 +74,25 @@ button:hover {
   background: var(--gold);
 }
 
+@media screen and (max-width: 768px) {
+  a[href="#bingoBoard"] {
+    display: none;
+  }
+}
+
 @media print {
   #intro,
   footer {
     display: none !important;
   }
 
-  @media screen and (max-width: 768px) {
-    #nav {
+  @media print and (max-width: 768px) {
+    nav {
       display: flex !important;
+      justify-content: space-between !important;
+      flex-direction: row !important;
     }
   }
-
   nav {
     margin-bottom: 25px !important;
   }

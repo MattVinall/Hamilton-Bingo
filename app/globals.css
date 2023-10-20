@@ -80,47 +80,10 @@ button:hover {
   }
 }
 
-/* safari  */
-@media not all and (min-resolution:.001dpcm) {
-  @media print {
-    @page {
-        size: 1600px;
-    }
-    
-    body,
-    html {
-      width: 1600px;
-    }
-      
-  }
-}
+/* iphone SE */
 
-@media print {
-  #intro,
-  footer {
-    display: none;
-  }
-
-  nav {
-    margin-bottom: 25px;
-  }
-
+@media only screen and (width: 375px) and (height: 667px) and (-webkit-device-pixel-ratio: 2) {
   #bingoBoard {
-    padding: 0;
-  }
-
-  #bingoBoard .card {
-    border: 2px solid black;
-    height: 20% !important
-  }
-
-  nav {
-    display: flex !important;
-    justify-content: space-between !important;
-    flex-direction: row !important;
-  }
-
-  .bingo-board-container {
-    margin-top: -15px !important
+    min-height: 145vh !important;
   }
 }

@@ -82,7 +82,7 @@ button:hover {
 
   @media screen and (max-width: 768px) {
     #nav {
-      display: none !important;
+      display: flex !important;
     }
   }
 

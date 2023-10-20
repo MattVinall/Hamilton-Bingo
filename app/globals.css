@@ -92,6 +92,14 @@ button:hover {
       justify-content: space-between !important;
       flex-direction: row !important;
     }
+
+    #bingoBoard {
+      min-height: 85vh !important;
+    }
+
+    #bingoBoard .card {
+      height: 30% !important;
+    }
   }
   nav {
     margin-bottom: 25px !important;

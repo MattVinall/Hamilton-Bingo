@@ -60,7 +60,7 @@ const BingoBoard: React.FC<Props> = ({ businesses }) => {
                             <h3 className="text-4xl md:text-6xl text-center text-black font-bold mb-2">{key}</h3>
                             {bingoBoard[key as keyof BingoBoard].map((business: Business) => (
                                 <div key={`${key}-${business.id}`} className="card w-full flex flex-col items-center justify-center h-[20%] md:h-[40%] p-2 mr-4 mt-4 mb-4 rounded-md bg-navy">
-                                    <h4 className="text-base md:text-lg text-center font-bold mb-3">{business.name}</h4>
+                                    <h4 className="text-sm md:text-lg text-center font-bold mb-3">{business.name}</h4>
                                     <p className="text-center text-sm md:text-base">{business.address}</p>
                                 </div>
                             ))}
@@ -69,7 +69,7 @@ const BingoBoard: React.FC<Props> = ({ businesses }) => {
                 </div>
             </div>
             <div id="print" className="text-center">
-                <button onClick={handlePrint} className="mt-12 ml-4 bg-navy text-white rounded-lg py-4 px-12 hover:background-[#AB804D]">Print</button>
+                <button onClick={handlePrint} className="mt-12 bg-navy text-white rounded-lg py-4 px-12 hover:background-[#AB804D]">Print</button>
             </div>
         </>
     );

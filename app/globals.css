@@ -74,6 +74,10 @@ button:hover {
   background: var(--gold);
 }
 
+.col-span-1:not(:nth-of-type(3)) .author {
+  display: none;
+}
+ 
 @media screen and (max-width: 768px) {
   a[href="#bingoBoard"] {
     display: none;
@@ -84,13 +88,6 @@ button:hover {
 
 @media only screen and (width: 375px) and (height: 667px) and (-webkit-device-pixel-ratio: 2) {
   #bingoBoard {
-    min-height: 145vh !important;
-  }
-}
-
-/* Phone 12, iPhone 12 Pro, iPhone 13, iPhone 13 Pro, and iPhone 14: */
-@media only screen and (width: 390px) and (height: 844px) and (-webkit-device-pixel-ratio: 3) {
-  #bingoBoard {
-    min-height: 145vh !important;
+    min-height: 100vh !important;
   }
 }

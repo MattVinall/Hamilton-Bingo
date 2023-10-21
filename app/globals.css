@@ -37,7 +37,7 @@ body {
   background: var(--cream);
 }
 
-h3 {
+h3, .bingo-title {
   font-family: "Bright Regular";
 }
 

@@ -34,8 +34,7 @@ const BingoBoard: React.FC<Props> = ({ businesses }) => {
 
     return (
         <>
-            <div id="bingoBoard" className="md:rounded-lg p-2 md:p-4 min-h-[80vh] sm:min-h-[80vh] md:min-h-[100vh] lg:min-h-[130vh] xl:min-h-[90vh]! 2xl:min-h-[90vh]">
-                <p className="font-bold text-md mx-4 text-center my-4 md:my-2 text-black">Presented by Andrew De Marzo, REALTOR®</p>
+            <div id="bingoBoard" className="md:rounded-lg p-2 md:p-4 min-h-[80vh] sm:min-h-[80vh] md:min-h-[100vh] lg:min-h-[130vh] xl:min-h-[90vh]! 2xl:min-h-[85vh]">
                 <div className="grid grid-cols-5 gap-0.5 md:gap-2">
                     {Object.keys(bingoBoard).map((key, index) => (
                         <div key={key + index} className="col-span-1">
@@ -47,9 +46,10 @@ const BingoBoard: React.FC<Props> = ({ businesses }) => {
                             ))}
                         </div>
                     ))}
-                </div>
+                </div>'
             </div>
             <div className="text-center">
+                <p className="font-bold text-md mx-4 text-center my-4 md:my-2 text-black">Presented by Andrew De Marzo, REALTOR®</p>
                 <button onClick={handleRefresh} className="mt-4 md:mt-12 bg-navy text-white rounded-lg py-4 px-12 hover:background-[#AB804D]">Refresh</button>
             </div>
         </>

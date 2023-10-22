@@ -5,7 +5,7 @@ import Logo2 from "@/public/logos/logo-Judy-Marsales-lg.png";
 function Navbar() {
     return (
         <header className='bg-cream my-6 border-black border-b-4 md:min-h-[15vh]'>
-            <nav className='container mx-auto flex flex-col md:flex-row justify-between items-center mb-6'>
+            <nav className='container mx-auto flex flex-col md:flex-row justify-around lg:justify-between items-center mb-6'>
                 <div className="flex flex-col">
                     <Image src={Logo} alt="Logo" width={150} height={100} />
 

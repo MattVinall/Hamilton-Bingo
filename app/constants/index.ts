@@ -42,7 +42,7 @@ export const businesses = {
     },
     {
       id: 9,
-      name: "Cafe Domestiique",
+      name: "Cafe Domestique",
       address: "102 King St W, Dundas",
     },
     {

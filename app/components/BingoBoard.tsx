@@ -46,7 +46,7 @@ const BingoBoard: React.FC<Props> = ({ businesses }) => {
                             ))}
                         </div>
                     ))}
-                </div>'
+                </div>
             </div>
             <div className="text-center">
                 <p className="font-bold text-md mx-4 text-center my-4 md:my-2 text-black">Presented by Andrew De Marzo, REALTOR®</p>

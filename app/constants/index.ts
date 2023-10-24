@@ -12,7 +12,7 @@ export const businesses = {
     },
     {
       id: 3,
-      name: "Rooney's'",
+      name: "Rooney's",
       address: "724 Main St E",
     },
     {
@@ -22,12 +22,12 @@ export const businesses = {
     },
     {
       id: 5,
-      name: "Saint Jaimes",
+      name: "Saint James",
       address: "170 James St N",
     },
     {
       id: 6,
-      name: "Vintage",
+      name: "Vintage Coffee Roasters",
       address: "977 King St E",
     },
     {
@@ -47,7 +47,7 @@ export const businesses = {
     },
     {
       id: 10,
-      name: "Grandads Donuts",
+      name: "Grandad's Donuts",
       address: "574 James St N",
     },
     {
@@ -94,6 +94,10 @@ export const businesses = {
       id: 19,
       name: "Emerald Coffee",
       address: "340 Barton St E",
+    },
+    {
+      id: 34,
+      name: "Mulberry Coffee House",
     },
   ],
   I: [
@@ -162,14 +166,9 @@ export const businesses = {
       name: "Tim Hortons Field",
       address: "64 Melrose Ave N",
     },
-    // {
-    //   id: 34,
-    //   name: "Skating at Pier 8",
-    //   address: "47 Discovery Dr",
-    // },
     {
       id: 35,
-      name: "Empire Make Room",
+      name: "Empire Make Space",
       address: "168 Ottawa St N",
     },
     {
@@ -177,11 +176,6 @@ export const businesses = {
       name: "Planetarium (McMaster)",
       address: "1280 Main St W, Burke Science Building",
     },
-    // {
-    //   id: 37,
-    //   name: "Kenora Transfer Station",
-    //   address: "Address",
-    // },
     {
       id: 38,
       name: "Royal Botanical Gardens",
@@ -198,11 +192,6 @@ export const businesses = {
       address: "177 Sherman Ave N",
     },
     {
-      id: 41,
-      name: "Wild Waterworks",
-      address: "680 Waterfront Trail",
-    },
-    {
       id: 42,
       name: "The Move Room",
       address: "164 Ottawa St N",
@@ -214,6 +203,10 @@ export const businesses = {
     },
   ],
   N: [
+    {
+      id: 37,
+      name: "Hanma Japanese Foods",
+    },
     {
       id: 44,
       name: "Tony G's Pizzeria",
@@ -241,12 +234,12 @@ export const businesses = {
     },
     {
       id: 49,
-      name: "Flora Pizzareia",
+      name: "Flora Pizzeria",
       address: "4 Young St",
     },
     {
       id: 50,
-      name: "Cowabunga",
+      name: "Cowabunga+",
       address: "30 Vine St",
     },
     {
@@ -301,8 +294,7 @@ export const businesses = {
     },
     {
       id: 61,
-      name: "1101",
-      address: "1101 Main St E",
+      name: "Golden Tenders",
     },
     {
       id: 62,
@@ -316,7 +308,7 @@ export const businesses = {
     },
     {
       id: 64,
-      name: "Poke",
+      name: "Poke Co",
       address: "179 Ottawa St N",
     },
     {
@@ -353,6 +345,18 @@ export const businesses = {
       id: 71,
       name: "Hutch's",
       address: " 280 Van Wagners Beach Rd",
+    },
+    {
+      id: 129,
+      name: "Joshy's Good Eats (Hamilton Farmers Market)",
+    },
+    {
+      id: 130,
+      name: "Ellis Kitchen",
+    },
+    {
+      id: 131,
+      name: "Willard's Ice Cream",
     },
   ],
   G: [
@@ -472,9 +476,13 @@ export const businesses = {
       address: "211 Ottawa St N",
     },
     {
-      id: 129,
+      id: 138,
       name: "Into the Abyss",
       address: "267 King St E",
+    },
+    {
+      id: 132,
+      name: "Cherry Birch General",
     },
   ],
   O: [
@@ -647,6 +655,26 @@ export const businesses = {
       id: 128,
       name: "Plank",
       address: "18 Augusta St",
+    },
+    {
+      id: 133,
+      name: "Mosaic Beer Bar",
+    },
+    {
+      id: 134,
+      name: "Radius Dining",
+    },
+    {
+      id: 135,
+      name: "Clifford Brewing",
+    },
+    {
+      id: 136,
+      name: "Barton Salumeria",
+    },
+    {
+      id: 137,
+      name: "Whoa Nelly!",
     },
   ],
 };

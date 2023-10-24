@@ -1,7 +1,7 @@
 export type Business = {
   id: number;
   name: string;
-  address: string;
+  address?: string;
 };
 
 export type Businesses = {

@@ -14,7 +14,7 @@ const Footer = () => {
                     <p><a className="link" href="mailto:info@judymarsales.com">info@judymarsales.com</a></p>
                     <p><a className="link" target="_blank" href="https://www.instagram.com/judymarsalesrealestate/">@judymarsalesrealestate</a></p>
                 </div>
-                <div className="py-8 text-center">
+                <div className="py-2 md:py8 text-center">
                     <p className="text-black font-bold my-4">Developed by <a className="link" href="https://mattvinall.dev" target="_blank" rel="noopener">Matt Vinall</a></p>
                     <p className="text-center text-black font-bold mt-4">&copy; {new Date().getFullYear()} - All rights reserved</p>
                 </div>

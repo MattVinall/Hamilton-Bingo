@@ -9,16 +9,16 @@ export const Intro = () => {
     };
     return (
         <section id="intro" className="xl:min-h-[140vh] 2xl:min-h-[85vh] flex flex-col justify-center items-center">
-            <iframe className="w-[95%] mt-12 md:w-[50%] mb-12" width="560" height="315" src="https://www.youtube.com/embed/y6120QOlsfU?si=A7g3AQfFnQgylwyr" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen loading="lazy"></iframe>
+            <iframe className="w-[95%] mt-12 lg:w-[50%] mb-12" width="560" height="315" src="https://www.youtube.com/embed/y6120QOlsfU?si=A7g3AQfFnQgylwyr" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen loading="lazy"></iframe>
             <div className="container px-4 md:mx-auto">
-                <h2 className="text-black font-bold text-2xl md:text-4xl mb-4 md:w-[70%] md:mx-auto">Welcome to Hamilton BINGO!</h2>
-                <p className="text-black font-medium text-medium md:w-[70%] md:mx-auto">
+                <h2 className="text-black font-bold text-2xl md:text-4xl mb-4 lg:w-[70%] md:mx-auto">Welcome to Hamilton BINGO!</h2>
+                <p className="text-black font-medium text-medium lg:w-[70%] md:mx-auto">
                     To celebrate Hamilton Day, I wanted to give Hamiltonians and visitors a way to find their next
                     favourite coffee place, attraction, lunch spot, shop or restaurant/bar! Hamilton is full of many
                     wonderful, unique places to visit and I want you to explore and enjoy the city as much as I have
                     since moving here two years ago.
                 </p>
-                <p className="text-black font-medium text-medium md:w-[70%] md:mx-auto mt-8">
+                <p className="text-black font-medium text-medium lg:w-[70%] md:mx-auto mt-8">
                     The premise is simple: check out your Hamilton BINGO card below and try to visit any of the
                     squares! Take a photo at each square you visit from November 1st to November 14th and tag
                     @andrewdemarzo on Instagram to enter into a contest. Each unique Hamilton BINGO card
@@ -28,7 +28,7 @@ export const Intro = () => {
                     be 5 runner-up prizes to win $20 gift cards to your choice of business on your Hamilton BINGO
                     card.
                 </p>
-                <p className="text-black font-medium text-medium md:w-[70%] md:mx-auto mt-8">
+                <p className="text-black font-medium text-medium lg:w-[70%] md:mx-auto mt-8">
                     Andrew De Marzo is a real estate agent in Hamilton. While not born in Hamilton, Andrew and
                     his wife chose Hamilton as the place to start their family and call home. Andrew loves exploring
                     the city and selling people on Hamilton as a whole.

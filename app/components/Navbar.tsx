@@ -12,7 +12,7 @@ function Navbar() {
                     <Image className="my-4" src={Logo2} alt="Logo" width={150} height={100} />
                 </div>
                 <div className='flex flex-col'>
-                    <h1 className="text-black font-extrabold text-5xl bingo-title">
+                    <h1 className="text-black font-extrabold text-5xl bingo-title text-center md:text-left">
                         Hamilton Bingo
                     </h1>
                     <p className="font-medium text-black text-center md:text-left">Andrew De Marzo, REALTOR®</p>

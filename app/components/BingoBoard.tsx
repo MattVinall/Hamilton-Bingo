@@ -49,7 +49,7 @@ const BingoBoard: React.FC<Props> = ({ businesses }) => {
                 </div>
             </div>
             <div className="text-center">
-                <p className="font-bold text-md mx-4 text-center my-4 md:my-2 text-black">Presented by Andrew De Marzo, REALTOR®</p>
+                {/* <p className="font-bold text-md mx-4 text-center my-4 md:my-2 text-black">Presented by Andrew De Marzo, REALTOR®</p> */}
                 <button onClick={handleRefresh} className="mt-4 md:mt-12 bg-navy text-white rounded-lg py-4 px-12 hover:background-[#AB804D]">Refresh</button>
             </div>
         </>

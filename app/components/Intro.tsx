@@ -12,10 +12,29 @@ export const Intro = () => {
             <iframe className="w-[95%] mt-12 md:w-[50%] mb-12" width="560" height="315" src="https://www.youtube.com/embed/y6120QOlsfU?si=A7g3AQfFnQgylwyr" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen loading="lazy"></iframe>
             <div className="container px-4 md:mx-auto">
                 <p className="text-black font-medium text-medium md:w-[80%] md:mx-auto">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat rem assumenda vero quibusdam illum voluptatum iste harum sequi a modi dignissimos nulla temporibus dolore cumque, velit tempora? Libero, rerum perspiciatis cumque, porro voluptate dicta sint esse perferendis ipsa similique aliquam laudantium fuga nemo, in optio enim fugiat? Tempore quos rerum odit porro beatae magnam dolorem soluta reiciendis quia nulla optio debitis illum, non sed totam at dolore cumque eos libero distinctio adipisci maxime accusantium atque?
+                    To celebrate Hamilton Day, I wanted to give Hamiltonians and visitors a way to find their next
+                    favourite coffee place, attraction, lunch spot, shop or restaurant/bar! Hamilton is full of many
+                    wonderful, unique places to visit and I want you to explore and enjoy the city as much as I have
+                    since moving here two years ago.
                 </p>
                 <p className="text-black font-medium text-medium md:w-[80%] md:mx-auto mt-8">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat rem assumenda vero quibusdam illum voluptatum iste harum sequi a modi dignissimos nulla temporibus dolore cumque, velit tempora? Libero, rerum perspiciatis cumque, porro voluptate dicta sint esse perferendis ipsa similique aliquam laudantium fuga nemo, in optio enim fugiat? Tempore quos rerum odit porro beatae magnam dolorem soluta reiciendis quia nulla optio debitis illum, non sed totam at dolore cumque eos libero distinctio adipisci maxime accusantium atque?
+                    The premise is simple: check out your Hamilton BINGO card below and try to visit any of the
+                    squares! Take a photo at each square you visit from November 1st to November 14th and tag
+                    @andrewdemarzo on Instagram to enter into a contest. Each unique Hamilton BINGO card
+                    submission earns you 1 entry into a draw for a $150 gift card to your choice of one of the
+                    businesses on your Hamilton BINGO card. If you score a horizontal, vertical, or diagonal line you
+                    receive an extra 2 entries, for a total of 3 entries. In addition to the main prize, there will also
+                    be 5 runner-up prizes to win $20 gift cards to your choice of business on your Hamilton BINGO
+                    card.
+                </p>
+                <p className="text-black font-medium text-medium md:w-[80%] md:mx-auto mt-8">
+                    Andrew De Marzo is a real estate agent in Hamilton. While not born in Hamilton, Andrew and
+                    his wife chose Hamilton as the place to start their family and call home. Andrew loves exploring
+                    the city and selling people on Hamilton as a whole.
+                    Judy Marsales Real Estate Ltd., Brokerage opened its doors in 1988 and has carved a special
+                    niche as one of the areas few independently owned and operated real estate firms. Headed by
+                    Judy Marsales, the brokerage services Hamilton, as well as Ancaster, Burlington, Dundas,
+                    Waterdown, Flamborough, Stoney Creek and surrounding areas.
                 </p>
             </div>
             <div className="hidden md:flex md:flex-col md:mx-auto my-6 md:my-12 text-center">

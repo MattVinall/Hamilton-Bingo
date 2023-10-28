@@ -17,6 +17,8 @@ function Navbar() {
                     </h1>
                     <p className="font-medium text-black text-center md:text-left">Andrew De Marzo, REALTOR®</p>
                     <p className="font-medium text-black text-center md:text-left">@andrewdemarzo</p>
+                    <p className="font-medium text-black text-center md:text-left">Judy Marsales Real Estate Ltd., Brokerage®</p>
+                    <p className="font-medium text-black text-center md:text-left">@judymarsalesrealestate</p>
                 </div>
             </nav>
         </header>

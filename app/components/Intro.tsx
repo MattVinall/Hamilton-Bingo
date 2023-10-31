@@ -9,7 +9,6 @@ export const Intro = () => {
     };
     return (
         <section id="intro" className="xl:min-h-[140vh] 2xl:min-h-[85vh] flex flex-col justify-center items-center">
-            <iframe className="w-[95%] mt-12 lg:w-[50%] mb-12" width="560" height="315" src="https://www.youtube.com/embed/y6120QOlsfU?si=A7g3AQfFnQgylwyr" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen loading="lazy"></iframe>
             <div className="container px-4 md:mx-auto">
                 <h2 className="text-black font-bold text-2xl md:text-4xl mb-4 lg:w-[70%] md:mx-auto">Welcome to Hamilton BINGO!</h2>
                 <p className="text-black font-medium text-medium lg:w-[70%] md:mx-auto">

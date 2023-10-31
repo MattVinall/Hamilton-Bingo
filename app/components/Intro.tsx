@@ -8,9 +8,9 @@ export const Intro = () => {
         }
     };
     return (
-        <section id="intro" className="xl:min-h-[140vh] 2xl:min-h-[85vh] flex flex-col justify-center items-center">
-            <div className="container px-4 md:mx-auto">
-                <h2 className="text-black font-bold text-2xl md:text-4xl mb-4 lg:w-[70%] md:mx-auto">Welcome to Hamilton BINGO!</h2>
+        <section id="intro" className="xl:min-h-[85vh] flex flex-col justify-center items-center">
+            <div className="container px-4 md:mx-auto mt-8">
+                <h2 className="text-black text-center lg:text-left font-bold text-2xl md:text-4xl mb-4 lg:w-[70%] md:mx-auto">Welcome to Hamilton BINGO!</h2>
                 <p className="text-black font-medium text-medium lg:w-[70%] md:mx-auto">
                     To celebrate Hamilton Day, I wanted to give Hamiltonians and visitors a way to find their next
                     favourite coffee place, attraction, lunch spot, shop or restaurant/bar! Hamilton is full of many
@@ -31,13 +31,14 @@ export const Intro = () => {
                     Andrew De Marzo is a real estate agent in Hamilton. While not born in Hamilton, Andrew and
                     his wife chose Hamilton as the place to start their family and call home. Andrew loves exploring
                     the city and selling people on Hamilton as a whole.
-                    Judy Marsales Real Estate Ltd., Brokerage opened its doors in 1988 and has carved a special
+                </p>
+                <p className="text-black font-medium text-medium lg:w-[70%] md:mx-auto mt-8">Judy Marsales Real Estate Ltd., Brokerage opened its doors in 1988 and has carved a special
                     niche as one of the areas few independently owned and operated real estate firms. Headed by
                     Judy Marsales, the brokerage services Hamilton, as well as Ancaster, Burlington, Dundas,
                     Waterdown, Flamborough, Stoney Creek and surrounding areas.
                 </p>
             </div>
-            <div className="hidden md:flex md:flex-col md:mx-auto my-6 md:my-12 text-center">
+            <div className="hidden md:flex md:flex-col my-6 md:my-12 text-center">
                 <a href="#bingoBoard" onClick={handleJumpToBingo} className="mt-8 text-white font-bold py-4 px-6 rounded-full">Jump to Bingo</a>
             </div>
         </section>
